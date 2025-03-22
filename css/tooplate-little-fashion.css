@@ -49,8 +49,7 @@ html {
 }
 
 body {
-    background: #000;
-    color: #000;
+    background: var(--white-color);
     font-family: var(--body-font-family);    
     position: relative;
 }
