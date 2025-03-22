@@ -484,7 +484,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-color: var(--section-bg-color);
+  background-color: #000;
   position: relative;
   overflow: hidden;
   margin-top: 86px;
