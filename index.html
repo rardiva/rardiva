@@ -1,61 +1,80 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!-- Set the character encoding to UTF-8 for proper character display -->
         <meta charset="utf-8">
+        <!-- Set the viewport to make the site responsive for different screen sizes -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Meta description for search engine optimization (SEO) -->
         <meta name="description" content="">
+        <!-- Meta tag for author information -->
         <meta name="author" content="">
+        <!-- Link to the favicon for the website (small icon displayed in browser tab) -->
         <link rel="icon" href="images/logo.png" type="image/png">
+        <!-- Title of the webpage (shown in the browser tab) -->
         <title>RardIva Freelance</title>
 
         <!-- CSS FILES -->
+        <!-- Preconnect to Google's font service for improved performance -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-
+        <!-- Preconnect to Google's font CDN with CORS for secure loading -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+        
+        <!-- Link to Google Fonts to load the 'Inter' font family with specified weights -->
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
+        
+        <!-- Link to Bootstrap CSS for styling and responsive design -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Link to Bootstrap Icons for icon usage within the site -->
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
+        <!-- Link to Slick CSS for the image slider functionality -->
         <link rel="stylesheet" href="css/slick.css"/>
-
+        <!-- Link to custom CSS styles specific to this website -->
         <link href="css/tooplate-little-fashion.css" rel="stylesheet">
 
     </head>
     
     <body>
 
+        <!-- Preloader section that shows loading animation while page content loads -->
         <section class="preloader">
             <div class="spinner">
+                <!-- Inner circle element of the spinner -->
                 <span class="sk-inner-circle"></span>
             </div>
         </section>
     
         <main>
 
+            <!-- Navigation bar initialized using Bootstrap classes -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
+                    <!-- Button for toggling the navbar on smaller screens -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!-- Brand link for company -->
                     <a class="navbar-brand" href="index.html">
                         <strong><span>RardIva</span> Freelance</strong>
                     </a>
 
+                    <!-- Collapsible part of the navbar -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
+                                <!-- Link to Home page with active class for styling -->
                                 <a class="nav-link active" href="index.html">Home</a>
                             </li>
 
                             <li class="nav-item">
+                                <!-- Link to About page -->
                                 <a class="nav-link" href="about.html">About</a>
                             </li>
 
                             <li class="nav-item">
+                                <!-- Link to Services page -->
                                 <a class="nav-link" href="products.html">Services</a>
                             </li>
                         </ul>
@@ -63,19 +82,21 @@
                 </div>
             </nav>
             
-<!--This section is the codes for the three slide show images on the navigation bar-->
+            <!-- This section contains the slideshow images on the homepage -->
             <section class="slick-slideshow"> 
                 <div class="slick-custom">
+                    <!-- Slideshow image for Website Development -->
                     <img src="images/slideshow/webcode.jpg" class="img-fluid" alt="">
 
+                    <!-- Bottom content displayed over the image -->
                     <div class="slick-bottom">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-10">
+                                    <!-- Title for this slide -->
                                     <h1 class="slick-title">Website Development</h1>
-
+                                    <!-- Description for this service -->
                                     <p class="lead text-white mt-lg-3 mb-lg-5">Elevate your online presence with our stunning websites—designed to captivate and engage your audience like never before!</p>
-
                                 </div>
                             </div>
                         </div>
@@ -83,15 +104,16 @@
                 </div>
                 
                 <div class="slick-custom">
+                    <!-- Slideshow image for MC & Program Moderator -->
                     <img src="images/slideshow/mc.jpg" class="img-fluid" alt="">
                     <div class="slick-bottom">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-10">
+                                    <!-- Title for this slide -->
                                     <h1 class="slick-title">MC & Program Moderator</h1>
-
+                                    <!-- Description for this service -->
                                     <p class="lead text-white mt-lg-3 mb-lg-5">Elevate your event with our expert MCs—creating unforgettable experiences that captivate your audience and ensure smooth success!</p>
-
                                 </div>
                             </div>
                         </div>
@@ -99,50 +121,49 @@
                 </div>
 
                 <div class="slick-custom">
+                    <!-- Slideshow image for Leadership Workshops -->
                     <img src="images/slideshow/programs.JPG" class="img-fluid" alt="">
-
                     <div class="slick-bottom">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-10">
+                                    <!-- Title for this slide -->
                                     <h1 class="slick-title">Leadership Workshops</h1>
-
+                                    <!-- Description for this service -->
                                     <p class="lead text-white mt-lg-3 mb-lg-5">Transform your event into an unforgettable experience—empower the next generation with our dynamic leadership workshops!</p>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </section>
 
-            
-                                    
-                                          
+            <!-- Section showcasing featured freelance services -->
             <section class="front-product">
                 <div class="container-fluid p-0">
                     <div class="row align-items-center">
-
                         <div class="col-lg-6 col-12">
+                            <!-- Image representing freelance services -->
                             <img src="images/services/flyer.png" class="img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-6 col-12">
                             <div class="px-5 py-5 py-lg-0">
-                                
+                                <!-- Welcome message with company name -->
                                 <h2 class="mb-4">Welcome to <span>RardIva</span> Freelance Website</h2>
 
+                                <!-- Description paragraph outlining services offered -->
                                 <p class="lead mb-4">
                                     Elevate your online presence with Rardiva Freelance! Discover our all-inclusive package for web design, development, management, and maintenance—all for the unbeatable price of K400.00. For two whole months, we’ll expertly manage your web content and maintain your website, leaving you free to focus on what you do best: growing your business.
 
-At Rardiva Freelance, we believe in empowering our clients with high-quality, client-centered solutions that drive real success and sustainable growth. Our dedicated team is focused on delivering results that not only meet your expectations but consistently exceed them, providing you with the confidence to navigate—and thrive in—the complexities of your industry.
+                                    At Rardiva Freelance, we believe in empowering our clients with high-quality, client-centered solutions that drive real success and sustainable growth. Our dedicated team is focused on delivering results that not only meet your expectations but consistently exceed them, providing you with the confidence to navigate—and thrive in—the complexities of your industry.
 
-But that’s not all! When you choose Rardiva Freelance, you’re not just getting a service; you’re gaining a partner invested in your triumph. We listen to your needs, tailor our services to align with your goals, and ensure that every aspect of your website contributes to your vision.
+                                    But that’s not all! When you choose Rardiva Freelance, you’re not just getting a service; you’re gaining a partner invested in your triumph. We listen to your needs, tailor our services to align with your goals, and ensure that every aspect of your website contributes to your vision.
 
-Don’t settle for less when it comes to your online success. Call us today to unlock your organization’s full potential and achieve remarkable growth through our comprehensive website development and suite of other services. Your future awaits—let’s build it together!
+                                    Don’t settle for less when it comes to your online success. Call us today to unlock your organization’s full potential and achieve remarkable growth through our comprehensive website development and suite of other services. Your future awaits—let’s build it together!
                                 </p>
 
+                                <!-- Call-to-action link to explore additional services -->
                                 <a href="products.html" class="custom-link">
                                     Explore Our Services
                                     <i class="bi-arrow-right ms-2"></i>
@@ -153,33 +174,37 @@ Don’t settle for less when it comes to your online success. Call us today to u
                 </div>
             </section>
 
+            <!-- Section highlighting various freelance services offered -->
             <section class="featured-product section-padding">
                 <div class="container">
                     <div class="row">
-                        
                         <div class="col-12 text-center">
+                            <!-- Title for the featured services section -->
                             <h2 class="mb-5">Services We Provide</h2>
                         </div>
 
                         <div class="col-lg-4 col-12 mb-3">
                             <div class="product-thumb">
                                 <a href="product-detail.html">
+                                    <!-- Image for Events Master of Ceremony service -->
                                     <img src="images/services/mc.jpg" class="img-fluid product-image" alt="">
                                 </a>
-<div class="product-top d-flex">
+                                <div class="product-top d-flex">
+                                    <!-- Heart icon for favorites; positioned to the right -->
                                     <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
                                 </div>
                                 <div class="product-info d-flex">
                                     <div>
                                         <h5 class="product-title mb-0">
+                                            <!-- Title for the service with a link to detail page -->
                                             <a href="product-detail.html" class="product-title-link">Events Master of Ceremony and Program Moderation</a>
                                         </h5>
-
                                         <p class="product-p"></p>
+                                        <!-- Link to explore services -->
                                         <a href="products.html" class="custom-link">
-                                    Explore Our Services
-                                    <i class="bi-arrow-right ms-2"></i>
-                                </a>
+                                            Explore Our Services
+                                            <i class="bi-arrow-right ms-2"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -188,43 +213,25 @@ Don’t settle for less when it comes to your online success. Call us today to u
                         <div class="col-lg-4 col-12 mb-3">
                             <div class="product-thumb">
                                 <a href="product-detail.html">
+                                    <!-- Image for Website Development & Management service -->
                                     <img src="images/services/codeweb.jpg" class="img-fluid product-image" alt="">
                                 </a>
-<div class="product-top d-flex">
+                                <div class="product-top d-flex">
+                                    <!-- Heart icon for favorites; positioned to the right -->
                                     <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
-</div>
-                                  <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Website Development & Management </a>
-                                        </h5>
-
-                                        <p class="product-p"></p>
-                                        <a href="products.html" class="custom-link">
-                                       <!--     <a href="https://github.com/rardiva/rardiva/blob/main/files/Website%20Development%20Form.pdf" download>
-    <button style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Download Website Development Form
-    </button>
-</a>
--->
-                                    Explore Our Services
-                                    <i class="bi-arrow-right ms-2"></i>
-                                </a>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
                                 <div class="product-info d-flex">
                                     <div>
                                         <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Leadership Capacity Building Workshop Innovator</a>
+                                            <!-- Title for the service with a link to detail page -->
+                                            <a href="product-detail.html" class="product-title-link">Website Development & Management </a>
                                         </h5>
-
                                         <p class="product-p"></p>
                                         <a href="products.html" class="custom-link">
-                                    Explore Our Services
-                                    <i class="bi-arrow-right ms-2"></i>
-                                </a>
+                                            <!-- Link to explore services -->
+                                            Explore Our Services
+                                            <i class="bi-arrow-right ms-2"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -233,24 +240,25 @@ Don’t settle for less when it comes to your online success. Call us today to u
                         <div class="col-lg-4 col-12">
                             <div class="product-thumb">
                                 <a href="product-detail.html">
+                                    <!-- Image for Leadership workshops service -->
                                     <img src="images/services/type.jpg" class="img-fluid product-image" alt="">
                                 </a>
-
                                 <div class="product-top d-flex">
+                                    <!-- Heart icon for favorites; positioned to the right -->
                                     <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
                                 </div>
-
                                 <div class="product-info d-flex">
                                     <div>
                                         <h5 class="product-title mb-0">
+                                            <!-- Title for the service with a link to detail page -->
                                             <a href="product-detail.html" class="product-title-link">CV & Work Employment Document Design</a>
                                         </h5>
-
                                         <p class="product-p"></p>
                                         <a href="products.html" class="custom-link">
-                                    Explore Our Services
-                                    <i class="bi-arrow-right ms-2"></i>
-                                </a>
+                                            <!-- Link to explore services -->
+                                            Explore Our Services
+                                            <i class="bi-arrow-right ms-2"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -261,52 +269,54 @@ Don’t settle for less when it comes to your online success. Call us today to u
 
         </main>
 
-<footer class="site-footer">
+        <!-- Footer section of the website -->
+        <footer class="site-footer">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-3 col-10 me-auto mb-4">
                         <h4 class="text-white mb-3"> Contact</h4>
                         <ul class="social-icon">
-
+                            <!-- Contact phone link -->
                             <li><a href="tel: +67577914667" class="social-icon-link bi-telephone"> +675 7791 4667</a></li>
-<li><a href="mailto: rardiva09@gmail.com" class="social-icon-link bi-envelope-fill"> rardiva09@gmail.com</a></li>
-                            
+                            <!-- Email contact link -->
+                            <li><a href="mailto: rardiva09@gmail.com" class="social-icon-link bi-envelope-fill"> rardiva09@gmail.com</a></li>
+                        </ul>
                     </div>
 
                     <div class="col-lg-5 col-8">
                         <h5 class="text-white mb-3">Sitemap</h5>
-
                         <ul class="footer-menu d-flex flex-wrap">
+                            <!-- Sitemap links for navigation -->
                             <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About</a></li>
-
                             <li class="footer-menu-item"><a href="products.html" class="footer-menu-link">Services</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-4">
                         <h5 class="text-white mb-3">Social</h5>
-
                         <ul class="social-icon">
-
+                            <!-- Links to social media profiles -->
                             <li><a href="https://www.linkedin.com/in/gerard-ivalaoa-414436211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon-link bi-linkedin"></a></li>
-
                             <li><a href="https://wa.me/qr/64OAME2ZVFQND1" class="social-icon-link bi-whatsapp"></a></li>
-
                             <li><a href="https://www.instagram.com/ivalaoa_ivalaoa?igsh=YzljYTk1ODg3Zg==" class="social-icon-link bi-instagram"></a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </footer>
 
         <!-- JAVASCRIPT FILES -->
+        <!-- Link to jQuery JavaScript library -->
         <script src="js/jquery.min.js"></script>
+        <!-- Link to Bootstrap JavaScript and its components -->
         <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Link to Headroom.js for scrollable header functionality -->
         <script src="js/Headroom.js"></script>
+        <!-- Link to jQuery integration for Headroom.js -->
         <script src="js/jQuery.headroom.js"></script>
+        <!-- Link to Slick slider JavaScript -->
         <script src="js/slick.min.js"></script>
+        <!-- Link to custom scripts for additional functionalities -->
         <script src="js/custom.js"></script>
 
     </body>
