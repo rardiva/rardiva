@@ -946,7 +946,8 @@ button:focus:not(:focus-visible) {
 }
 
 .product-p {
-  font-size: var(--product-link-font-size); /* Set font size for product paragraphs */
+  font-size: 20px; /* Set font size for services paragraphs */
+  font-family: 'times new roman';
 }
 
 .view-all {
