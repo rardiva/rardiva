@@ -946,7 +946,7 @@ button:focus:not(:focus-visible) {
 }
 
 .product-p {
-  font-size: 20px; /* Set font size for services paragraphs */
+  font-size: 14px; /* Set font size for services paragraphs */
   font-family: 'times new roman';
   text-align: justify;
 }
