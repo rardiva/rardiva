@@ -50,7 +50,7 @@ html {
 
 body {
     background: var(--white-color); /* Set the background color of the body element */
-    font-family: var(--body-font-family); /* Apply the body font family */
+    font-family: 'times new roman'; /* Apply the body font family */
     position: relative; /* Set the position of the body to relative */
 }
 
@@ -884,7 +884,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  PRODUCT               
+  SERVICES               
 -----------------------------------------*/
 .front-product {
   background: var(--section-bg-color); /* Set background color for front product */
