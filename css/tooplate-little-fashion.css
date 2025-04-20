@@ -52,6 +52,8 @@ body {
     background: var(--white-color); /* Set the background color of the body element */
     font-family: 'times new roman'; /* Apply the body font family */
     position: relative; /* Set the position of the body to relative */
+    font-size: 18px; /* Set font size for body paragraphs */
+    text-align: justify;
 }
 
 /*---------------------------------------
@@ -737,6 +739,12 @@ section {
   width: 100%; /* Set width of nav items to 100% */
 }
 
+.about-p {
+  font-size: 18px; /* Set font size for about paragraphs */
+  font-family: 'times new roman';
+  text-align: justify;
+}
+
 .about .nav-pills .nav-link {
   color: var(--grey-color); /* Set color for nav link */
   font-size: 18px; /* Set font size for nav link */
@@ -946,7 +954,7 @@ button:focus:not(:focus-visible) {
 }
 
 .product-p {
-  font-size: 14px; /* Set font size for services paragraphs */
+  font-size: 18px; /* Set font size for services paragraphs */
   font-family: 'times new roman';
   text-align: justify;
 }
