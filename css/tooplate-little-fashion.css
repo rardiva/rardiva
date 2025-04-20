@@ -11,47 +11,47 @@ https://www.tooplate.com/view/2127-little-fashion
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                #FFFFFF;
-  --primary-color:              #FF4400;
-  --section-bg-color:           #f0f8ff;
-  --dark-color:                 #000000;
-  --grey-color:                 #d0d1d1;
-  --p-color:                    #717275;
+  --white-color:                #FFFFFF; /* Define a custom variable for white color */
+  --primary-color:              #FF4400; /* Define a custom variable for primary color */
+  --section-bg-color:           #f0f8ff; /* Define a custom variable for section background color */
+  --dark-color:                 #000000; /* Define a custom variable for dark color */
+  --grey-color:                 #d0d1d1; /* Define a custom variable for grey color */
+  --p-color:                    #717275; /* Define a custom variable for paragraph color */
 
-  --body-font-family:           'Inter', sans-serif;
+  --body-font-family:           'Inter', sans-serif; /* Define a custom variable for body font family */
 
-  --h5-font-size:               24px;
-  --p-font-size:                20px;
-  --copyright-text-font-size:   16px;
-  --product-link-font-size:     14px;
-  --custom-link-font-size:      12px;
+  --h5-font-size:               24px; /* Define a custom variable for H5 font size */
+  --p-font-size:                20px; /* Define a custom variable for paragraph font size */
+  --copyright-text-font-size:   16px; /* Define a custom variable for copyright text font size */
+  --product-link-font-size:     14px; /* Define a custom variable for product link font size */
+  --custom-link-font-size:      12px; /* Define a custom variable for custom link font size */
 
-  --font-weight-thin:           100;
-  --font-weight-light:          300;
-  --font-weight-normal:         400;
-  --font-weight-bold:           700;
-  --font-weight-black:          900;
+  --font-weight-thin:           100; /* Define a custom variable for thin font weight */
+  --font-weight-light:          300; /* Define a custom variable for light font weight */
+  --font-weight-normal:         400; /* Define a custom variable for normal font weight */
+  --font-weight-bold:           700; /* Define a custom variable for bold font weight */
+  --font-weight-black:          900; /* Define a custom variable for black font weight */
 }
 
 body,
 html {
-  height: 100%;
+  height: 100%; /* Set height to 100% for both body and html elements */
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Enable smooth scrolling for the html element */
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   html {
-    scroll-behavior: auto;
+    scroll-behavior: auto; /* Disable smooth scrolling for users with reduced motion preference */
   }
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family);    
-    position: relative;
+    background: var(--white-color); /* Set the background color of the body element */
+    font-family: var(--body-font-family); /* Apply the body font family */
+    position: relative; /* Set the position of the body to relative */
 }
 
 /*---------------------------------------
@@ -63,8 +63,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-color);
-  line-height: inherit;
+  color: var(--dark-color); /* Set the text color for headings */
+  line-height: inherit; /* Inherit line height setting */
 }
 
 h1,
@@ -73,255 +73,255 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold); /* Apply bold weight to headings */
 }
 
 h1,
 h2 {
-  font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-black); /* Apply black weight to the first two headings */
 }
 
 h1 {
-  font-size: 64px;
-  line-height: normal;
+  font-size: 64px; /* Set font size for H1 */
+  line-height: normal; /* Set line height for H1 to normal */
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 42px; /* Set font size for H2 */
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 36px; /* Set font size for H3 */
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 32px; /* Set font size for H4 */
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 24px; /* Set font size for H5 */
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 20px; /* Set font size for H6 */
 }
 
 p {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
-  font-family: 'times new roman';
+  color: var(--p-color); /* Set paragraph text color */
+  font-size: var(--p-font-size); /* Apply paragraph font size */
+  font-weight: var(--font-weight-light); /* Apply light weight for paragraphs */
+  font-family: 'times new roman'; /* Set paragraph font family */
 }
 
 a, 
 button {
-  touch-action: manipulation;
-  transition: all 0.3s;
+  touch-action: manipulation; /* Define touch actions for links and buttons */
+  transition: all 0.3s; /* Apply transition effect for links and buttons */
 }
 
 a {
-  color: var(--p-color);
-  text-decoration: none;
-  font-family: 'times new roman';
+  color: var(--p-color); /* Set the default text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-family: 'times new roman'; /* Set link font family */
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color); /* Change link color on hover */
 }
 
 .text-primary {
-  color: var(--primary-color) !important;
+  color: var(--primary-color) !important; /* Make text color primary */
 }
 
 ::selection {
-  background: var(--primary-color);
-  color: var(--white-color);
+  background: var(--primary-color); /* Set the background color for selected text */
+  color: var(--white-color); /* Set the text color for selected text */
 }
 
 /*---------------------------------------
   CUSTOM LINK               
 -----------------------------------------*/
 .custom-link {
-  color: var(--p-color);
-  font-size: var(--custom-link-font-size);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  position: relative;
+  color: var(--p-color); /* Set color for custom links */
+  font-size: var(--custom-link-font-size); /* Set font size for custom links */
+  font-weight: var(--font-weight-bold); /* Make custom links bold */
+  text-transform: uppercase; /* Transform text to uppercase */
+  position: relative; /* Set position to relative for custom links */
 }
 
 .custom-link i {
-  position: absolute;
-  opacity: 0;
-  bottom: 0;
-  left: 100%;
-  transition: all 0.3s;
-  line-height: normal;
+  position: absolute; /* Set icon position to absolute within the custom link */
+  opacity: 0; /* Make the icon invisible by default */
+  bottom: 0; /* Position the icon at the bottom of the custom link */
+  left: 100%; /* Position the icon to the right of the custom link */
+  transition: all 0.3s; /* Apply transition effect to the icon */
+  line-height: normal; /* Set line height to normal for the icon */
 }
 
 .custom-link:hover i {
-  opacity: 1;
-  left: 101%;
+  opacity: 1; /* Make the icon visible on hover */
+  left: 101%; /* Slightly shift the icon position on hover */
 }
 
 .lead {
-  font-size: 1.5rem;
-  font-weight: var(--font-weight-thin);
+  font-size: 1.5rem; /* Set font size for lead text */
+  font-weight: var(--font-weight-thin); /* Set font weight to thin for lead text */
 }
 
 b,
 strong {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold); /* Make bold text bold */
 }
 
 /*---------------------------------------
   PRE LOADER               
 -----------------------------------------*/
 .preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: none repeat scroll 0 0 var(--white-color);
+  position: fixed; /* Fix the preloader position on the screen */
+  top: 0; /* Position preloader at the top */
+  left: 0; /* Position preloader at the left */
+  width: 100%; /* Set width to 100% */
+  height: 100%; /* Set height to 100% */
+  z-index: 99999; /* Ensure preloader is above all other content */
+  display: flex; /* Use flexbox to align inside items */
+  flex-flow: row nowrap; /* Align items in a single row, no wrap */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background: none repeat scroll 0 0 var(--white-color); /* Set background color of preloader */
 }
 
 .spinner {
-  border: 1px solid transparent;
-  border-radius: 5px;
-  position: relative;
+  border: 1px solid transparent; /* Set invisible border to the spinner */
+  border-radius: 5px; /* Round the corners of the spinner */
+  position: relative; /* Set spinner position to relative */
 }
 
 .spinner::before {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 45px;
-  height: 45px;
-  margin-top: -10px;
-  margin-left: -23px;
-  border-radius: 50%;
-  border: 1px solid #959595;
-  border-top-color: var(--white-color);
-  animation: spinner .9s linear infinite;
+  content: ''; /* Create a pseudo-element for spinner effect */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  position: absolute; /* Position the pseudo-element absolutely */
+  top: 50%; /* Center the pseudo-element vertically */
+  left: 50%; /* Center the pseudo-element horizontally */
+  width: 45px; /* Set width for the pseudo-element */
+  height: 45px; /* Set height for the pseudo-element */
+  margin-top: -10px; /* Adjust vertical alignment */
+  margin-left: -23px; /* Adjust horizontal alignment */
+  border-radius: 50%; /* Make the pseudo-element circular */
+  border: 1px solid #959595; /* Set border color of the pseudo-element */
+  border-top-color: var(--white-color); /* Set top border color */
+  animation: spinner .9s linear infinite; /* Apply spinning animation */
 }
 
 @keyframes spinner {
-  to {transform: rotate(360deg);}
+  to {transform: rotate(360deg);} /* Define full rotation for spinner keyframe */
 }
 
 /*---------------------------------------
   CUSTOM BUTTON & ICON              
 -----------------------------------------*/
 .custom-btn {
-  background: var(--dark-color);
-  border-radius: 50px;
-  color: var(--white-color);
-  font-size: var(--copyright-text-font-size);
-  text-transform: uppercase;
-  padding: 16.50px 20px;
+  background: var(--dark-color); /* Set background color for custom button */
+  border-radius: 50px; /* Round button corners */
+  color: var(--white-color); /* Set button text color */
+  font-size: var(--copyright-text-font-size); /* Set font size for custom button */
+  text-transform: uppercase; /* Transform button text to uppercase */
+  padding: 16.50px 20px; /* Set padding for button */
 }
 
 .social-btn {
-  background: transparent;
-  border: 1px solid var(--grey-color);
-  color: var(--dark-color);
-  text-transform: none;
+  background: transparent; /* Make the background of the social button transparent */
+  border: 1px solid var(--grey-color); /* Set border for social button */
+  color: var(--dark-color); /* Set text color for social button */
+  text-transform: none; /* Do not transform social button text */
 }
 
 .social-btn:hover {
-  border-color: transparent;
+  border-color: transparent; /* Remove border color on hover */
 }
 
 .cart-form-select {
-  border-radius: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  border-radius: 0; /* No border radius for cart form select element */
+  padding-top: 15px; /* Set top padding for cart form select */
+  padding-bottom: 15px; /* Set bottom padding for cart form select */
 }
 
 .cart-btn {
-  border-radius: 0;
-  width: 100%;
-  font-size: var(--product-link-font-size);
+  border-radius: 0; /* No border radius for cart button */
+  width: 100%; /* Set width of cart button to 100% */
+  font-size: var(--product-link-font-size); /* Set font size for cart button */
 }
 
 .custom-btn:hover,
 .slick-slideshow .custom-btn:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
+  background: var(--primary-color); /* Change button background color on hover */
+  color: var(--white-color); /* Change button text color on hover */
 }
 
 .custom-icon {
-  color: var(--p-color);
-  font-size: 24px;
+  color: var(--p-color); /* Set color for custom icons */
+  font-size: 24px; /* Set font size for custom icons */
 }
 
 .custom-icon {
-  display: inline-block;
-  vertical-align: middle;
+  display: inline-block; /* Display the custom icon as inline-block */
+  vertical-align: middle; /* Align vertically to the middle */
 }
 
 .bi-bag.custom-icon {
-  font-size: 17px;
+  font-size: 17px; /* Set font size for bag icon */
 }
 
 .featured-icon {
-  color: var(--grey-color);
-  font-size: 52px;
+  color: var(--grey-color); /* Set color for featured icon */
+  font-size: 52px; /* Set font size for featured icon */
 }
 
 /*---------------------------------------
   DIV SEPARATOR               
 -----------------------------------------*/
 .div-separator {
-  position: relative;
+  position: relative; /* Set position to relative for div separator */
 }
 
 .div-separator::before {
-  content: "";
-  height: 1px;
-  background: var(--grey-color);
-  display: block;
-  width: 100%;
+  content: ""; /* Create a pseudo-element before the separator */
+  height: 1px; /* Set height for the pseudo-element */
+  background: var(--grey-color); /* Set background color for the pseudo-element */
+  display: block; /* Make the pseudo-element a block element */
+  width: 100%; /* Set width for the pseudo-element */
 }
 
 .div-separator span {
-  position: absolute;
-  top: 50%;
-  margin-left: -22.5px;
-  left: 50%;
-  text-align: center;
-  background: var(--white-color);
-  margin-top: -11px;
-  color: var(--dark-color);
-  font-weight: var(--font-weight-bold);
-  font-size: 14px;
-  width: 35px;
-  text-transform: uppercase;
+  position: absolute; /* Position the span absolutely within separator */
+  top: 50%; /* Center the span vertically */
+  margin-left: -22.5px; /* Adjust horizontal centering */
+  left: 50%; /* Center the span horizontally */
+  text-align: center; /* Center text inside the span */
+  background: var(--white-color); /* Set background color for the span */
+  margin-top: -11px; /* Adjust vertical centering */
+  color: var(--dark-color); /* Set text color for the span */
+  font-weight: var(--font-weight-bold); /* Make span text bold */
+  font-size: 14px; /* Set font size for span */
+  width: 35px; /* Set width for span */
+  text-transform: uppercase; /* Transform span text to uppercase */
 }
 
 /*---------------------------------------
   FULL IMAGE               
 -----------------------------------------*/
 .full-image-img {
-  display: block;
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  width: 100%;
-  bottom: -120px;
-  min-width: 650px;
+  display: block; /* Set full image to block display */
+  position: absolute; /* Position the image absolutely */
+  z-index: -1; /* Place the image below other elements */
+  right: 0; /* Align the image to the right */
+  width: 100%; /* Set width of the image to 100% */
+  bottom: -120px; /* Adjust the bottom position */
+  min-width: 650px; /* Set a minimum width for the image */
 }
 
 @media (min-width: 1600px) {
   .full-image-img {
-    bottom: -200px;
+    bottom: -200px; /* Adjust bottom position for larger screens */
   }
 }
 
@@ -329,184 +329,183 @@ strong {
   NAVIGATION               
 -----------------------------------------*/
 .navbar {
-  background: #B8860B;
-  position: fixed;
-  border-bottom: 2px solid #fff;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 25px 0;
-  z-index: 2;
-  will-change: transform;
-  transition: transform 300ms linear;
+  background: #B8860B; /* Set background color for navbar */
+  position: fixed; /* Fix navbar at the top of the page */
+  border-bottom: 2px solid #fff; /* Set bottom border for navbar */
+  top: 0; /* Align navbar to the top */
+  right: 0; /* Align navbar to the right */
+  left: 0; /* Align navbar to the left */
+  padding: 25px 0; /* Set vertical padding for navbar */
+  z-index: 2; /* Ensure navbar is above other elements */
+  will-change: transform; /* Indicate that the transform property may change */
+  transition: transform 300ms linear; /* Apply transition for transform effect */
 }
 
 .navbar span, h2 span, h4 span {
-	color: #1E90FF;
-	font-family: 'times new roman';
+    color: #1E90FF; /* Set color for spans within navbar and headings 2 and 4 */
+    font-family: 'times new roman'; /* Set font family for these spans */
 }
 
 .navbar.headroom--not-top {
-  padding: 20px 0;
+  padding: 20px 0; /* Adjust padding when navbar is not at the top */
 }
 
 .headroom--pinned {
-  transform: translate(0, 0);
+  transform: translate(0, 0); /* Reset transformation when navbar is pinned */
 }
 
 .headroom--unpinned {
-  transform: translate(0, -150%);
+  transform: translate(0, -150%); /* Move navbar up when not pinned */
 }
 
 .navbar-brand {
-  color: #fff;
-  font-size: 24px;
-  font-weight: var(--font-weight-light);
-  margin: 0;
-  padding: 0;
+  color: #fff; /* Set brand text color to white */
+  font-size: 24px; /* Set font size for brand text */
+  font-weight: var(--font-weight-light); /* Set light weight for brand text */
+  margin: 0; /* Remove margin for brand text */
+  padding: 0; /* Remove padding for brand text */
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  display: inline-block;
-  padding: 0;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
+  display: inline-block; /* Display nav links inline */
+  padding: 0; /* Remove padding for nav links */
+  margin-right: 1.5rem; /* Set right margin for nav links */
+  margin-left: 1.5rem; /* Set left margin for nav links */
 }
 
 .nav-link {
-  color: #fff;
-  font-size: 16px;
-  position: relative;
+  color: #fff; /* Set text color for navigation links */
+  font-size: 16px; /* Set font size for navigation links */
+  position: relative; /* Set position to relative for nav links */
 }
 
 .navbar .nav-link::after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--grey-color);
-  content: '';
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  transform: translateY(10px);
+  position: absolute; /* Position the after pseudo-element absolutely */
+  top: 100%; /* Position it below the link */
+  left: 0; /* Align to the left */
+  width: 100%; /* Set width to 100% */
+  height: 2px; /* Set height of the after element */
+  background: var(--grey-color); /* Set background color for the after element */
+  content: ''; /* Create an empty content for the after element */
+  opacity: 0; /* Make the after element invisible */
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; /* Transition effects for opacity and transform */
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s; /* For older versions of Firefox */
+  transition: opacity 0.3s, transform 0.3s; /* Standard transition */
+  -webkit-transform: translateY(10px); /* Move it down during transition */
+  -moz-transform: translateY(10px); /* For older versions of Firefox */
+  transform: translateY(10px); /* Apply downward movement during transition */
 }
 
 .navbar .nav-link.active::after, 
 .navbar .nav-link:hover::after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  transform: translateY(0px);
+  opacity: 1; /* Make the after element visible when active or hovered */
+  -webkit-transform: translateY(0px); /* Move it back to position */
+  -moz-transform: translateY(0px); /* For older versions of Firefox */
+  transform: translateY(0px); /* Apply back movement */
 }
 
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-  color: #1E90FF;
+  color: #1E90FF; /* Change link color to a brighter shade when active or hovered */
 }
 
 .nav-link:focus, 
 .nav-link:hover {
-  color: var(--p-color);
+  color: var(--p-color); /* Change color when link is focused or hovered */
 }
 
 .navbar-toggler {
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  margin: 0;
-  width: 30px;
-  height: 35px;
-  outline: none;
+  border: 0; /* Remove border from toggler button */
+  padding: 0; /* Remove padding for toggler button */
+  cursor: pointer; /* Change cursor to pointer */
+  margin: 0; /* Remove margin for toggler button */
+  width: 30px; /* Set fixed width for toggler */
+  height: 35px; /* Set fixed height for toggler */
+  outline: none; /* Remove outline from toggler button */
 }
 
 .navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
+  outline: none; /* On focus, ensure there's no outline */
+  box-shadow: none; /* Remove box shadow when focused */
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-  background: transparent;
+  background: transparent; /* Change background of toggler icon when expanded */
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
-  top: 0;
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease; /* Transition for top movement and rotation */
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease; /* Standard transition */
+  top: 0; /* Reset top position */
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-  transform: rotate(45deg);
+  transform: rotate(45deg); /* Rotate the before pseudo-element to 45 degrees */
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); /* Rotate the after pseudo-element to -45 degrees */
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: #fff;
-  transition: background 10ms 300ms ease;
-  display: block;
-  width: 30px;
-  height: 2px;
-  position: relative;
+  background: #fff; /* Set background color for toggler icon */
+  transition: background 10ms 300ms ease; /* Transition for background color */
+  display: block; /* Make toggler icon a block element */
+  width: 30px; /* Set width for toggler icon */
+  height: 2px; /* Set height for toggler icon */
+  position: relative; /* Set position for toggler icon */
 }
 
 .navbar-toggler .navbar-toggler-icon::before,
 .navbar-toggler .navbar-toggler-icon::after {
-  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
-  position: absolute;
-  right: 0;
-  left: 0;
-  background: #fff;
-  width: 30px;
-  height: 2px;
-  content: '';
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease; /* Transition for top movement and rotation for before/after elements */
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease; /* Standard transition for before/after elements */
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease; /* Fallback for older browsers */
+  position: absolute; /* Set position for before/after elements */
+  right: 0; /* Align to the right */
+  left: 0; /* Align to the left */
+  background: #fff; /* Set background for before/after elements */
+  width: 30px; /* Set width for before/after elements */
+  height: 2px; /* Set height for before/after elements */
+  content: ''; /* Create an empty content for before/after elements */
 }
 
 .navbar-toggler .navbar-toggler-icon:before {
-  top: -8px;
+  top: -8px; /* Position before element slightly above the icon */
 }
 
 .navbar-toggler .navbar-toggler-icon:after {
-  top: 8px;
+  top: 8px; /* Position after element slightly below the icon */
 }
 
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-color: #fff;
-  position: relative;
-  overflow: hidden;
-  margin-top: 86px;
+  background-color: #fff; /* Set background color for the site header */
+  position: relative; /* Set position of header to relative */
+  overflow: hidden; /* Hide any overflow content in header */
+  margin-top: 86px; /* Set top margin for site header */
 }
 
 .site-header.section-padding {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 7rem; /* Set top padding for section padded header */
+  padding-bottom: 7rem; /* Set bottom padding for section padded header */
 }
 
 .site-header.section-padding-img {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 10rem; /* Set top padding for section padded header with image */
+  padding-bottom: 10rem; /* Set bottom padding for section padded header with image */
 }
 
 .header-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
+  position: absolute; /* Set header image position to absolute */
+  top: 0; /* Align image to the top */
+  right: 0; /* Align image to the right */
+  width: 50%; /* Set width of header image to 50% */
+  height: 100%; /* Set height of header image to 100% */
+  object-fit: cover; /* Ensure image covers the header area */
 }
 
 /*---------------------------------------
@@ -514,131 +513,131 @@ strong {
 -----------------------------------------*/
 @media (min-width: 992px) {
   .slick-slideshow {
-    height: 100vh;
+    height: 100vh; /* Set height to full viewport height for slideshows on large screens */
   }
 }
 
 .slick-slideshow {
-  margin-top: 86px;
+  margin-top: 86px; /* Set margin on top of the slideshow */
 }
 
 .slick-title {
-  color: var(--white-color);
+  color: var(--white-color); /* Set color of slick title to white */
 }
 
 .slick-custom {
-  position: relative;
+  position: relative; /* Make slick custom position relative */
 }
 
 .slick-custom img {
-  width: 100%;
-  object-fit: cover;
+  width: 100%; /* Set width of images in slick custom to 100% */
+  object-fit: cover; /* Ensure images fill the area */
 }
 
 .slick-bottom {
-  background: linear-gradient(to top, var(--dark-color), transparent 90%);
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background: linear-gradient(to top, var(--dark-color), transparent 90%); /* Create a gradient background starting from dark color to transparent */
+  position: absolute; /* Set position to absolute */
+  z-index: 2; /* Place above other elements */
+  bottom: 0; /* Align to the bottom */
+  right: 0; /* Align to the right */
+  left: 0; /* Align to the left */
+  width: 100%; /* Set width to 100% */
+  height: 100%; /* Set height to 100% */
 }
 
 .slick-bottom .container {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
+  position: absolute; /* Set container position to absolute */
+  top: 40%; /* Center vertically at 40% */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -40%); /* Offset to truly center */
 }
 
 .slick-overlay {
-  background: linear-gradient(to top, #000, transparent 120%);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  background: linear-gradient(to top, #000, transparent 120%); /* Create an overlay with a gradient from black to transparent */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
 }
 
 .slick-slideshow .custom-btn {
-  font-weight: var(--font-weight-bold);
-  display: inline-block;
-  padding-right: 32px;
-  padding-left: 32px;
+  font-weight: var(--font-weight-bold); /* Make button bold */
+  display: inline-block; /* Make button inline-block */
+  padding-right: 32px; /* Set right padding */
+  padding-left: 32px; /* Set left padding */
 }
 
 @media (min-width: 576px) {
   .slick-slideshow .slick-dots {
-    max-width: 540px;
+    max-width: 540px; /* Set max width of dots for small screens */
   }
 }
 
 @media (min-width: 768px) {
   .slick-slideshow .slick-dots {
-    max-width: 720px;
+    max-width: 720px; /* Set max width of dots for medium screens */
   }
 }
 
 @media (min-width: 992px) {
   .slick-slideshow .slick-dots {
-    max-width: 960px;
+    max-width: 960px; /* Set max width of dots for larger screens */
   }
 }
 
 @media (min-width: 1200px) {
   .slick-slideshow .slick-dots {
-    max-width: 1140px;
+    max-width: 1140px; /* Set max width of dots for even larger screens */
   }
 }
 
 @media (min-width: 1400px) {
   .slick-slideshow .slick-dots {
-    max-width: 1320px;
+    max-width: 1320px; /* Set max width of dots for very large screens */
   }
 }
 
 .slick-slideshow .slick-dots {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translate(0, -50%);
-  margin: 0 auto;
-  padding: 0;
+  position: absolute; /* Set dots position to absolute */
+  z-index: 2; /* Ensure dots are above other elements */
+  top: 50%; /* Center dots vertically */
+  left: 0; /* Align dots to the left */
+  right: 0; /* Align dots to the right */
+  transform: translate(0, -50%); /* Center dots using translate */
+  margin: 0 auto; /* Center align dots horizontally */
+  padding: 0; /* Remove padding for dots */
 }
 
 .slick-slideshow .slick-dots li {
-  background: transparent;
-  border: 5px solid rgba(255, 255, 255, 0.35);
-  border-radius: 100%;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  padding: 5px;
-  margin-left: auto;
-  cursor: pointer;
+  background: transparent; /* Make dots transparent */
+  border: 5px solid rgba(255, 255, 255, 0.35); /* Set border for dots with transparency */
+  border-radius: 100%; /* Make dots circular */
+  display: block; /* Display dots as block elements */
+  width: 30px; /* Set width for dots */
+  height: 30px; /* Set height for dots */
+  margin: 10px; /* Set margin around dots */
+  padding: 5px; /* Set padding inside dots */
+  margin-left: auto; /* Align left automatically */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .slick-slideshow .slick-dots button {
-  background: transparent;
-  border: none;
-  color: transparent;
-  display: block;
-  width: 100%;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  height: 0;
+  background: transparent; /* Make button background transparent */
+  border: none; /* Remove border for the button */
+  color: transparent; /* Make color of the button transparent */
+  display: block; /* Set button display to block */
+  width: 100%; /* Set button width to 100% */
+  height: 0; /* Set height to 0 to hide button */
+  margin: 0; /* Remove margin from button */
+  padding: 0; /* Remove padding from button */
+  outline: none; /* Remove outline from button */
+  height: 0; /* Redundant height setting */
 }
 
 .slick-slideshow .slick-dots li:hover,
 .slick-slideshow .slick-dots .slick-active {
-  background: var(--white-color);
+  background: var(--white-color); /* Change background to white on hover or when active */
 }
 
 /*---------------------------------------
@@ -646,14 +645,14 @@ strong {
 -----------------------------------------*/
 
 .custom-circle-image {
-  border-radius: 100px;
-  width: 55px;
-  height: 55px;
+  border-radius: 100px; /* Set circular border radius for images */
+  width: 55px; /* Set width for circle images */
+  height: 55px; /* Set height for circle images */
 }
 
 .custom-circle-image.team-image {
-  width: 85px;
-  height: 85px;
+  width: 85px; /* Set wider width for team circle images */
+  height: 85px; /* Set taller height for team circle images */
 }
 
 /*---------------------------------------
@@ -661,402 +660,402 @@ strong {
 -----------------------------------------*/
 .slick-testimonial .slick-list,
 .slick-testimonial .slick-track {
-  height: 100%;
+  height: 100%; /* Set height for testimonials */
 }
 
 .slick-testimonial {
-  margin: auto;
+  margin: auto; /* Center the testimonial section */
 }
 
 .slick-testimonial-caption {
-  quotes: '❝' '❞';
-  position: relative;
-  padding: 5rem 7rem;
+  quotes: '❝' '❞'; /* Set quotes for the testimonial captions */
+  position: relative; /* Set position to relative for caption */
+  padding: 5rem 7rem; /* Set padding for testimonial captions */
 }
 
 .slick-testimonial-caption::before {
-  content: open-quote;
-  display: inline-block;
-  color: var(--primary-color);
-  font-family: auto;
-  font-size: 100px;
-  height: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  content: open-quote; /* Create an opening quote before the caption */
+  display: inline-block; /* Display opening quote as inline-block */
+  color: var(--primary-color); /* Set color for opening quote */
+  font-family: auto; /* Set font family for opening quote */
+  font-size: 100px; /* Set large font size for opening quote */
+  height: 0; /* Set height to 0 for opening quote */
+  position: absolute; /* Position quote absolutely */
+  top: 0; /* Align quote to the top */
+  left: 0; /* Align quote to the left */
 }
 
 .slick-testimonial .slick-dots {
-  text-align: center;
+  text-align: center; /* Center align testimonial dots */
 }
 
 .slick-testimonial .slick-dots li {
-  background: var(--grey-color);
-  display: inline-block;
-  vertical-align: top;
-  width: 16%;
-  height: 1px;
+  background: var(--grey-color); /* Set background for testimonial dots */
+  display: inline-block; /* Display dots inline */
+  vertical-align: top; /* Align dots to the top */
+  width: 16%; /* Set width for testimonial dots */
+  height: 1px; /* Set height for testimonial dots */
 }
 
 .slick-testimonial .slick-dots button {
-  background: transparent;
-  border: none;
-  color: transparent;
-  display: block;
-  width: 100%;
-  height: 0;
-  margin: 0;
-  padding: 0;
+  background: transparent; /* Make button background transparent */
+  border: none; /* Remove border from button */
+  color: transparent; /* Make button text color transparent */
+  display: block; /* Set display of button to block */
+  width: 100%; /* Set width to 100% */
+  height: 0; /* Set height to 0 to hide button */
+  margin: 0; /* Remove margin from button */
+  padding: 0; /* Remove padding from button */
 }
 
 .slick-testimonial .slick-dots li:hover,
 .slick-testimonial .slick-dots .slick-active {
-  background: var(--dark-color);
+  background: var(--dark-color); /* Change background to dark color on hover or when active */
 }
 
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
 section {
-  content-visibility: auto;
-  contain-intrinsic-size: 700px;
+  content-visibility: auto; /* Optimize rendering with content visibility */
+  contain-intrinsic-size: 700px; /* Define intrinsic size for the section */
 }
 
 .section-padding {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 7rem; /* Set top padding for sections */
+  padding-bottom: 7rem; /* Set bottom padding for sections */
 }
 
 .featured {
-  background: var(--section-bg-color);
+  background: var(--section-bg-color); /* Set background color for featured sections */
 }
 
 /*---------------------------------------
   ABOUT               
 -----------------------------------------*/
 .about .nav-pills .nav-item {
-  width: 100%;
+  width: 100%; /* Set width of nav items to 100% */
 }
 
 .about .nav-pills .nav-link {
-  color: var(--grey-color);
-  font-size: 18px;
-  font-weight: var(--font-weight-bold);
-  border-left: 1px solid var(--grey-color);
-  border-radius: 0;
-  padding-right: 0;
+  color: var(--grey-color); /* Set color for nav link */
+  font-size: 18px; /* Set font size for nav link */
+  font-weight: var(--font-weight-bold); /* Make nav link bold */
+  border-left: 1px solid var(--grey-color); /* Set left border for nav link */
+  border-radius: 0; /* Remove border radius for nav link */
+  padding-right: 0; /* Remove right padding for nav link */
 }
 
 .about .nav-pills .nav-link:hover,
 .about .nav-pills .nav-link.active, 
-.about .nav-pills .show>.nav-link {
-  background: transparent;
-  border-left-color: var(--primary-color);
-  color: var(--primary-color);
+.about .nav-pills .show > .nav-link {
+  background: transparent; /* Keep background transparent on hover and when active */
+  border-left-color: var(--primary-color); /* Change left border color to primary on hover and active */
+  color: var(--primary-color); /* Change text color to primary on hover and active */
 }
 
 /*---------------------------------------
   FAQ ACCORDION               
 -----------------------------------------*/
 .accordion-item {
-  background-color: transparent;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
+  background-color: transparent; /* Set background to transparent for accordion items */
+  border-top: 0; /* Remove top border */
+  border-right: 0; /* Remove right border */
+  border-left: 0; /* Remove left border */
 }
 
 .accordion-button {
-  background-color: transparent;
-  box-shadow: none;
+  background-color: transparent; /* Make button background transparent */
+  box-shadow: none; /* Remove box shadow from button */
 }
 
 .accordion-button:not(.collapsed) {
-  background: transparent;
-  box-shadow: none;
+  background: transparent; /* Keep background transparent when not collapsed */
+  box-shadow: none; /* Remove box shadow when not collapsed */
 }
 
 button:focus:not(:focus-visible) {
-  border-color: transparent;
-  box-shadow: none;
+  border-color: transparent; /* Remove border color on focus for buttons not visibly focused */
+  box-shadow: none; /* Remove box shadow on focus */
 }
 
 .accordion-body {
-  border-top: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0,0,0,.125); /* Set top border for accordion body */
 }
 
 .accordion-button {
-  font-size: 1.5rem;
-  font-weight: var(--font-weight-normal);
-  padding-top: 1.5rem;
-  padding-right: 0;
-  padding-bottom: 1.5rem;
-  padding-left: 0;
+  font-size: 1.5rem; /* Set font size for accordion button */
+  font-weight: var(--font-weight-normal); /* Set normal weight for accordion button text */
+  padding-top: 1.5rem; /* Set top padding for accordion button */
+  padding-right: 0; /* Remove right padding from accordion button */
+  padding-bottom: 1.5rem; /* Set bottom padding for accordion button */
+  padding-left: 0; /* Remove left padding from accordion button */
 }
 
 .accordion-body {
-  padding: 2rem 0;
+  padding: 2rem 0; /* Set vertical padding for accordion body */
 }
 
 /*---------------------------------------
   TEAM MEMBERS               
 -----------------------------------------*/
 .team {
-  background: var(--grey-color);
+  background: var(--grey-color); /* Set background color for team section */
 }
 
 .team-thumb {
-  background: var(--white-color);
-  position: relative;
-  border-radius: .25rem;
-  padding: 42px 32px;
+  background: var(--white-color); /* Set background color for team member thumbnail */
+  position: relative; /* Set position to relative for team member thumbnail */
+  border-radius: .25rem; /* Round corners of the thumbnail */
+  padding: 42px 32px; /* Set padding for team member thumbnail */
 }
 
 .team-info {
-  width: 100%;
+  width: 100%; /* Set width of team info to 100% */
 }
 
 .custom-modal-btn {
-  background: var(--grey-color);
-  color: var(--white-color);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto 32px;
-  width: 42px;
-  height: 42px;
+  background: var(--grey-color); /* Set background color for custom modal button */
+  color: var(--white-color); /* Set text color for custom modal button */
+  position: absolute; /* Position button absolutely */
+  top: 0; /* Align button to the top */
+  right: 0; /* Align button to the right */
+  bottom: 0; /* Align button to the bottom */
+  margin: auto 32px; /* Center button horizontally with margin */
+  width: 42px; /* Set width for custom modal button */
+  height: 42px; /* Set height for custom modal button */
 }
 
 .modal-body {
-  padding: 4rem;
+  padding: 4rem; /* Set padding for modal body */
 }
 
 .modal-header {
-  padding-top: 7rem;
-  padding-bottom: 5rem;
+  padding-top: 7rem; /* Set top padding for modal header */
+  padding-bottom: 5rem; /* Set bottom padding for modal header */
 }
 
 .modal-header .btn-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 24px;
-  margin: 32px;
+  position: absolute; /* Position close button absolutely */
+  top: 0; /* Align close button to the top */
+  right: 0; /* Align close button to the right */
+  font-size: 24px; /* Set font size for close button */
+  margin: 32px; /* Set margin for close button */
 }
 
 #cart-modal .modal-header .btn-close {
-  z-index: 2;
-  margin: 22px;
+  z-index: 2; /* Ensure close button is above other elements */
+  margin: 22px; /* Set margin for close button */
 }
 
 #cart-modal .modal-header {
-  border-bottom: 0;
-  padding: 0;
+  border-bottom: 0; /* Remove bottom border from the modal header */
+  padding: 0; /* Remove padding from modal header */
 }
 
 #cart-modal .modal-footer {
-  padding: 2rem 4rem;
+  padding: 2rem 4rem; /* Set padding for modal footer */
 }
 
 /*---------------------------------------
   SKILL - PROGRESS BAR               
 -----------------------------------------*/
 .skill-thumb strong {
-  display: inline-block;
-  margin-bottom: 6px;
+  display: inline-block; /* Display strong text inline-block */
+  margin-bottom: 6px; /* Set bottom margin for strong text */
 }
 
 .skill-thumb span {
-  color: var(--dark-color);
-  font-size: 24px;
-  font-weight: var(--font-weight-bold);
+  color: var(--dark-color); /* Set color for skill span text */
+  font-size: 24px; /* Set font size for skill span text */
+  font-weight: var(--font-weight-bold); /* Make skill span text bold */
 }
 
 .skill-thumb .progress {
-  background: var(--white-color);
-  box-shadow: none;
-  border-radius: 100px;
-  height: 1px;
-  margin-bottom: 16px;
+  background: var(--white-color); /* Set background for progress bar */
+  box-shadow: none; /* Remove shadow for progress bar */
+  border-radius: 100px; /* Make progress bar rounded */
+  height: 1px; /* Set height for progress bar */
+  margin-bottom: 16px; /* Set bottom margin for progress bar */
 }
 
 .skill-thumb .progress .progress-bar-primary {
-  background: var(--grey-color);
+  background: var(--grey-color); /* Set background for primary progress bar */
 }
 
 /*---------------------------------------
   PRODUCT               
 -----------------------------------------*/
 .front-product {
-  background: var(--section-bg-color);
+  background: var(--section-bg-color); /* Set background color for front product */
 }
 
 .product-thumb {
-  background: var(--white-color);
-  position: relative;
-  transition: all 0.5s ease-out;
+  background: var(--white-color); /* Set background color for product thumbnail */
+  position: relative; /* Set position to relative for product thumbnail */
+  transition: all 0.5s ease-out; /* Apply transition effect for product thumbnail */
 }
 
 .product-image {
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; /* Apply transition effect for product image */
 }
 
 .product-thumb:hover .product-image {
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175); /* Add shadow effect on hover on the product image */
 }
 
 .product-top {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: 20px;
+  position: absolute; /* Position product top absolutely */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  left: 0; /* Align to the left */
+  margin: 20px; /* Set margin for product top */
 }
 
 .product-info {
-  padding: 30px 20px;
+  padding: 30px 20px; /* Set padding for product info */
 }
 
 .product-description,
 .product-cart-thumb {
-  padding: 0 20px;
+  padding: 0 20px; /* Set horizontal padding for product description and cart thumbnail */
 }
 
 .product-icon {
-  color:orange;
+  color: orange; /* Set color for product icon */
 }
 
 .product-title-link {
-  color: orange;
+  color: orange; /* Set color for product title link */
 }
 
 .product-additional-link {
-  display: inline-block;
-  vertical-align: top;
-  font-size: var(--product-link-font-size);
-  margin-top: 32px;
-  margin-right: 12px;
+  display: inline-block; /* Display additional links as inline-block */
+  vertical-align: top; /* Align to the top */
+  font-size: var(--product-link-font-size); /* Set font size for additional links */
+  margin-top: 32px; /* Set top margin for additional links */
+  margin-right: 12px; /* Set right margin for additional links */
 }
 
 .product-alert {
-  background: var(--white-color);
-  color: var(--p-color);
-  font-size: var(--custom-link-font-size);
-  font-weight: var(--font-weight-bold);
-  padding: 3px 10px;
+  background: var(--white-color); /* Set background for product alert box */
+  color: var(--p-color); /* Set text color for product alert */
+  font-size: var(--custom-link-font-size); /* Set font size for product alert */
+  font-weight: var(--font-weight-bold); /* Make product alert bold */
+  padding: 3px 10px; /* Set padding for product alert */
 }
 
 .product-p {
-  font-size: var(--product-link-font-size);
+  font-size: var(--product-link-font-size); /* Set font size for product paragraphs */
 }
 
 .view-all {
-  text-transform: uppercase;
-  color: var(--p-color);
-  font-size: 13px;
-  font-weight: var(--font-weight-bold);
-  border-bottom: 2px solid var(--grey-color);
-  padding-bottom: 6px;
+  text-transform: uppercase; /* Transform text to uppercase */
+  color: var(--p-color); /* Set color for view all text */
+  font-size: 13px; /* Set font size for view all text */
+  font-weight: var(--font-weight-bold); /* Make view all text bold */
+  border-bottom: 2px solid var(--grey-color); /* Set bottom border for view all text */
+  padding-bottom: 6px; /* Set bottom padding for view all text */
 }
 
 /*---------------------------------------
   CONTACT              
 -----------------------------------------*/
 .contact-info {
-  padding: 40px;
+  padding: 40px; /* Set padding for contact info */
 }
 
 .contact-form .form-control {
-  border-color: var(--grey-color);
-  font-weight: var(--font-weight-normal);
+  border-color: var(--grey-color); /* Set border color for form controls */
+  font-weight: var(--font-weight-normal); /* Set normal weight for form control text */
 }
 
-.form-floating>label {
-  color: #000;
-  font-weight: var(--font-weight-normal);
+.form-floating > label {
+  color: #000; /* Set text color for floating labels */
+  font-weight: var(--font-weight-normal); /* Set normal weight for floating labels */
 }
 
 .contact-form button[type='submit'] {
-  background: var(--dark-color);
-  border: none;
-  border-radius: 100px;
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  padding: 16px;
+  background: var(--dark-color); /* Set background for submit button */
+  border: none; /* Remove border from submit button */
+  border-radius: 100px; /* Round corners of submit button */
+  color: var(--white-color); /* Set text color for submit button */
+  font-weight: var(--font-weight-bold); /* Make text bold in submit button */
+  text-transform: uppercase; /* Transform submit button text to uppercase */
+  padding: 16px; /* Set padding for submit button */
 }
 
 .contact-form button[type='submit']:hover {
-  background: var(--primary-color);
+  background: var(--primary-color); /* Change background color of submit button on hover */
 }
 
 /*---------------------------------------
   SITE FOOTER               
 -----------------------------------------*/
 .site-footer {
-  background: #DAA520;
-  border-top: 2px solid #000;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  background: #DAA520; /* Set background color for the site footer */
+  border-top: 2px solid #000; /* Set top border for site footer */
+  padding-top: 5rem; /* Set top padding for site footer */
+  padding-bottom: 5rem; /* Set bottom padding for site footer */
 }
 
 .footer-menu {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Remove margin from footer menu */
+  padding: 0; /* Remove padding from footer menu */
 }
 
 .footer-menu-item {
-  display: block;
-  width: 50%;
+  display: block; /* Display footer menu items as block */
+  width: 50%; /* Set width for footer menu items */
 }
 
 .footer-menu-link {
-  color: #1E90FF;
-  font-weight: var(--font-weight-light);
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  color: #1E90FF; /* Set color for footer menu links */
+  font-weight: var(--font-weight-light); /* Set light font weight for footer menu links */
+  display: inline-block; /* Display footer menu links inline */
+  vertical-align: top; /* Align footer menu links to the top */
+  margin-top: 4px; /* Set top margin for footer menu links */
+  margin-bottom: 4px; /* Set bottom margin for footer menu links */
 }
 
 .site-footer .social-icon-link {
-  margin-top: 4px;
+  margin-top: 4px; /* Set top margin for social icon links */
 }
 
 .site-footer .social-icon-link:hover,
 .footer-menu-link:hover {
-  color: #000;
+  color: #000; /* Change color on hover for social icon links and footer menu links */
 }
 
 .copyright-text {
-  font-size: var(--copyright-text-font-size);
+  font-size: var(--copyright-text-font-size); /* Set font size for copyright text */
 }
 
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
 .social-icon {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Remove margin for social icons */
+  padding: 0; /* Remove padding for social icons */
 }
 
 .social-icon li {
-  list-style: none;
-  display: inline-block;
-  vertical-align: top;
+  list-style: none; /* Remove bullets from list items */
+  display: inline-block; /* Display social icon list items inline */
+  vertical-align: top; /* Align social icon list items to the top */
 }
 
 .social-icon-link {
-  color: #fff;
-  font-size: 1rem;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 4px;
-  margin-right: 15px;
+  color: #fff; /* Set color for social icon links */
+  font-size: 1rem; /* Set font size for social icon links */
+  display: inline-block; /* Display social icon links inline */
+  vertical-align: top; /* Align social icon links to the top */
+  margin-bottom: 4px; /* Set bottom margin for social icon links */
+  margin-right: 15px; /* Set right margin for social icon links */
 }
 
 .social-icon-link:hover {
-  color: orange;
+  color: orange; /* Change color for social icon links on hover */
 }
 
 /*---------------------------------------
@@ -1064,124 +1063,123 @@ button:focus:not(:focus-visible) {
 -----------------------------------------*/
 @media screen and (max-width: 1200px) {
   h1 {
-    font-size: 62px;
+    font-size: 62px; /* Reduce font size for H1 on screens below 1200px */
   }
 }
 
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 42px;
-    margin-bottom: 0;
+    font-size: 42px; /* Reduce font size for H1 on screens below 991px */
+    margin-bottom: 0; /* Remove bottom margin for H1 */
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 36px; /* Reduce font size for H2 on screens below 991px */
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 32px; /* Reduce font size for H3 on screens below 991px */
   }
 
   h4 {
-    font-size: 28px;
+    font-size: 28px; /* Reduce font size for H4 on screens below 991px */
   }
 
   h5 {
-    font-size: 24px;
+    font-size: 24px; /* Reduce font size for H5 on screens below 991px */
   }
 
   h6 {
-    font-size: 20px;
+    font-size: 20px; /* Reduce font size for H6 on screens below 991px */
   }
 
   .lead {
-    font-size: 16px;
+    font-size: 16px; /* Reduce font size for lead text on screens below 991px */
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
-    margin-top: 1rem;
+    margin-top: 1rem; /* Set top margin for nav links in expanded navbar */
   }
 
   .site-header {
-    background-position: bottom;
+    background-position: bottom; /* Adjust background position of site header on small screens */
   }
 
   #cart-modal .modal-header .btn-close {
-    margin: 22px 14px;
+    margin: 22px 14px; /* Adjust margins for close button in cart modal */
   }
 
   .custom-btn {
-    font-size: 14px;
-    padding: 13.5px 20px;
+    font-size: 14px; /* Reduce font size for custom buttons on small screens */
+    padding: 13.5px 20px; /* Adjust padding for custom buttons on small screens */
   }
 
   .slick-slideshow .custom-btn {
-    padding-right: 27px;
-    padding-left: 27px;
+    padding-right: 27px; /* Adjust right padding for custom buttons in slideshow */
+    padding-left: 27px; /* Adjust left padding for custom buttons in slideshow */
   }
 
   .social-login,
   .div-separator {
-    width: 75% !important;
+    width: 75% !important; /* Set width to 75% for social login and div separators on small screens */
   }
 
   #cart-modal .modal-footer .row {
-    width: 100% !important;
+    width: 100% !important; /* Set footer row width to 100% in cart modal */
   }
 
   .site-header.section-padding,
   .section-padding {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 4rem; /* Reduce top padding for section padded headers and sections */
+    padding-bottom: 4rem; /* Reduce bottom padding for section padded headers and sections */
   }
 
   .site-header-image.section-padding {
-    padding-bottom: 0;
+    padding-bottom: 0; /* Remove bottom padding for header image */
   }
 
   .header-info {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 50px; /* Adjust top padding for header info */
+    padding-bottom: 100px; /* Adjust bottom padding for header info */
   }
 
   .header-image {
-    position: relative;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: auto;
-    height: auto;
+    position: relative; /* Set position relative for header image */
+    top: auto; /* Reset top position */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: auto; /* Reset width */
+    height: auto; /* Reset height */
   }
 
   .slick-testimonial-caption {
-    padding: 6rem 3rem 4rem 3rem;
+    padding: 6rem 3rem 4rem 3rem; /* Adjust padding for testimonials */
   }
 
   .slick-slideshow .slick-dots li {
-    width: 25px;
-    height: 25px;
+    width: 25px; /* Set width of dots for smaller screens */
+    height: 25px; /* Set height of dots for smaller screens */
   }
 
   .modal-header {
-    padding-top: 6rem;
-    padding-bottom: 2rem;
+    padding-top: 6rem; /* Set top padding for modal header */
+    padding-bottom: 2rem; /* Set bottom padding for modal header */
   }
 
   .modal-body {
-    padding: 2rem;
+    padding: 2rem; /* Set padding for modal body */
   }
 
   #cart-modal .modal-footer {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0; /* Remove right padding in cart modal footer */
+    padding-left: 0; /* Remove left padding in cart modal footer */
   }
 
   #cart-modal .modal-body {
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem; /* Adjust padding for cart modal body */
   }
 
   .full-image-img {
-    bottom: 0;
+    bottom: 0; /* Reset bottom position for full image */
   }
 }
-
